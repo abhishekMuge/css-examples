@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black and white | mix bend css property</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="pointer"></div>
+        <h1>
+            Black & White
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quis eligendi deleniti porro illo impedit culpa velit repudiandae! Commodi tenetur itaque perspiciatis sed, accusamus aliquid sint consectetur qui voluptatem cumque quidem nam! Beatae, modi deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita explicabo corrupti quos possimus vero soluta accusamus necessitatibus dicta sit aspernatur asperiores, eligendi mollitia cupiditate nisi totam. Perferendis autem itaque is laboriosam que.
+        </p>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script>
+        $(document).mousemove(function(e){
+            $('.pointer').css({left: e.pageX, top: e.pageY})
+        })
+    </script>
+</body>
+</html>
