@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 240px auto;
+}
+.container .box{
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px );
+    background-color: #ff0; 
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.container .box .icon{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: 1;
+}
+.container .box:hover .icon{
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.container .box .icon .fas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 80px;
+}
+.container .box:hover .icon .fas{
+    font-size: 40px;
+}
+.container .box .content{
+    position: absolute;
+    top: 100%;
+    height: calc(100% - 100px);
+    text-align: center;
+    padding: 10px;
+    transition: .5s;
+    box-sizing: border-box;
+    color: #fff;
+    opacity: 1;
+}
+.container .box:hover .content{
+    top: 100px;
+}
+.container .box .content h3{
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 24px;
+}
+.container .box .content p{
+    padding: 0;
+    margin: 0;
+}
+.container .box:nth-child(1) .icon{
+    background-color: #319635;
+}
+.container .box:nth-child(1){
+    background-color: #4caf50;
+}
+.container .box:nth-child(2) .icon{
+    background-color: #ccb90a;
+}
+.container .box:nth-child(2){
+    background-color: #c7bd35;
+}
+.container .box:nth-child(3) .icon{
+    background-color: #07a4ff;
+}
+.container .box:nth-child(3){
+    background-color: #145757;
+}
