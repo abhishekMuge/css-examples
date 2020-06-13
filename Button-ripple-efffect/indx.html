@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,4 +31,38 @@
 
     </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Ripple Effect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#">Sign Up</a>
+    <a href="#">Sign In</a>
+    <script>
+        const Buttons = document.querySelectorAll('a');
+        Buttons.forEach(btn => {
+            btn.addEventListener('mouseenter', function(e){
+                let x = e.clientX - e.target.offsetLeft;
+                let y = e.clientY - e.target.offsetTop;
+
+                let ripple = document.createElement('span');
+                ripple.style.left = x +'px';
+                ripple.style.top = y +'px';
+
+                this.appendChild(ripple);
+
+                setTimeout(() => {
+                    ripple.remove()
+                }, 1000)
+            })
+        })
+
+    </script>
+</body>
+>>>>>>> 2b7d8bcb5dc0db55072bcda68ff675c1cade9549
 </html>
