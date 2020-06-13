@@ -1,0 +1,37 @@
+body{
+    background: #DCF5FF;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items:center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+    background: white;
+    border-radius: 10px;
+    width: 30%;
+    
+    .inner{
+        background: rgb(25, 131, 180);
+        padding: 1em;
+        border-radius: 10px;
+        color: white;
+        width: 250px;
+        clip-path: circle(10% at 91% 19%);
+        transition: clip-path .5s ease-in-out;
+
+        h1{
+            font-size: 3rem;
+            margin: 0;
+        }
+       p{
+           font-size: 1rem;
+           margin-top: 10px;
+           line-height: 20px;
+       }
+    }
+    &:hover .inner{
+        clip-path: circle(75%);
+    }
+}
